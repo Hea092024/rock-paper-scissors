@@ -39,21 +39,21 @@ function playRound() {
   let combinedChoice = humanSelection + "-" + computerSelection;
 
   switch (combinedChoice) {
-    case "rock-paper":
+    case "Rock-Paper":
       console.log("You Lose! Paper beats Rock");
       computerScore++;
       break;
-    case "paper-scissors":
+    case "Paper-Scissors":
       console.log("You Lose! Scissors beats Paper");
       computerScore++;
       break;
-    case "scissors-rock":
+    case "Scissors-Rock":
       console.log("You Lose! Rock beats Scissors");
       computerScore++;
       break;
-    case "rock-rock":
-    case "scissor-scissor":
-    case "paper-paper":
+    case "Rock-Rock":
+    case "Scissors-Scissors":
+    case "Paper-Paper":
       console.log("Its a draw!");
       break;
     default:
@@ -63,4 +63,4 @@ function playRound() {
   }
   //   return playRound(humanSelection, computerSelection);
 }
-playRound()
+playRound();
