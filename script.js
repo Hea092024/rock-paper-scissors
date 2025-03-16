@@ -53,7 +53,7 @@ function playRound() {
       console.log("Its a draw!");
       break;
     default:
-      onsole.log("You Win! " + humanSelection + " beats " + computerSelection);
+      console.log("You Win! " + humanSelection + " beats " + computerSelection);
       humanScore++;
       break;
   }
