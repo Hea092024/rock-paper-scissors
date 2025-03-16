@@ -2,10 +2,6 @@
 
 let humanScore = 0;
 let computerScore = 0;
-let combinedChoice = humanScore + "-" + computerScore;
-
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
 function getComputerChoice() {
   let choices = ["Rock", "Scissors", "Paper"];
@@ -33,15 +29,23 @@ function getHumanChoice() {
 // getHumanChoice() //commented out to prevent prompt to pop up all the time
 // console.log(getHumanChoice())
 
-function playRound(humanSelection, computerSelection) {
+function playRound() {
+    
+    let combinedChoice = humanSelection + "-" + computerSelection;
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+
+
   switch (combinedChoice) {
     case "rock-paper":
       console.log("You Lose! Paper beats Rock");
       computerScore++;
-    case "paper - scissors":
+      break;
+    case "paper-scissors":
       console.log("You Lose! Scissors beats Paper");
       computerScore++;
-      case "scissors - rock":
+      break;
+      case "scissors-rock":
         console.log("You Lose! Rock beats Scissors");
         computerScore++;
         break;
@@ -55,4 +59,6 @@ function playRound(humanSelection, computerSelection) {
                     humanScore++;
                     break;
   }
+//   return playRound(humanSelection, computerSelection);
 }
+
