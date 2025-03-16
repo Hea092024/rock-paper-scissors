@@ -44,5 +44,15 @@ function playRound(humanSelection, computerSelection) {
       case "scissors - rock":
         console.log("You Lose! Rock beats Scissors");
         computerScore++;
+        break;
+        case "rock-rock":
+            case "scissor-scissor":
+                case"paper-paper":
+                console.log("Its a draw!");
+                break;
+                default:
+                    console.log("You Win! " + humanScore + "beats" + computerScore);
+                    humanScore++;
+                    break;
   }
 }
