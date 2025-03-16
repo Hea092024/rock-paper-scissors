@@ -30,11 +30,9 @@ function getHumanChoice() {
 // console.log(getHumanChoice())
 
 function playRound() {
-    
   const humanSelection = getHumanChoice();
   const computerSelection = getComputerChoice();
   let combinedChoice = humanSelection + "-" + computerSelection;
-
 
   switch (combinedChoice) {
     case "rock-paper":
@@ -45,20 +43,20 @@ function playRound() {
       console.log("You Lose! Scissors beats Paper");
       computerScore++;
       break;
-      case "scissors-rock":
-        console.log("You Lose! Rock beats Scissors");
-        computerScore++;
-        break;
-        case "rock-rock":
-            case "scissor-scissor":
-                case"paper-paper":
-                console.log("Its a draw!");
-                break;
-                default:
-                    console.log("You Win! " + humanSelection + "beats" + computerSelection);
-                    humanScore++;
-                    break;
+    case "scissors-rock":
+      console.log("You Lose! Rock beats Scissors");
+      computerScore++;
+      break;
+    case "rock-rock":
+    case "scissor-scissor":
+    case "paper-paper":
+      console.log("Its a draw!");
+      break;
+    default:
+      onsole.log("You Win! " + humanSelection + " beats " + computerSelection);
+      humanScore++;
+      break;
   }
-//   return playRound(humanSelection, computerSelection);
+  //   return playRound(humanSelection, computerSelection);
 }
-
+playRound()
