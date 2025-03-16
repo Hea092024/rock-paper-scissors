@@ -17,8 +17,12 @@ function getHumanChoice() {
     "Pick your choice:\n1 - Rock\n2 - Paper\n3 - Scissors\nPlease enter 1, 2, or 3:"
   );
 
-  if (input === "1" || input === "2" || input === "3") {
-    return input;
+  if (input === "1") {
+    return "Rock";
+  } else if (input === "2") {
+    return "Paper";
+  } else if (input === "3") {
+    return "Scissors";
   } else {
     alert("Invalid choice! Please enter 1, 2 or 3.");
     return null;
