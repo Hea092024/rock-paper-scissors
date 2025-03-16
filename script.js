@@ -31,9 +31,9 @@ function getHumanChoice() {
 
 function playRound() {
     
-    let combinedChoice = humanSelection + "-" + computerSelection;
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
+  const humanSelection = getHumanChoice();
+  const computerSelection = getComputerChoice();
+  let combinedChoice = humanSelection + "-" + computerSelection;
 
 
   switch (combinedChoice) {
@@ -55,7 +55,7 @@ function playRound() {
                 console.log("Its a draw!");
                 break;
                 default:
-                    console.log("You Win! " + humanScore + "beats" + computerScore);
+                    console.log("You Win! " + humanSelection + "beats" + computerSelection);
                     humanScore++;
                     break;
   }
