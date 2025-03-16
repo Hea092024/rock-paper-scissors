@@ -3,6 +3,9 @@
 let humanScore = 0;
 let computerScore = 0;
 
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
 function getComputerChoice () {
     let choices = ["Rock", "Scissors","Paper"]
     // console.log(choices)
@@ -26,3 +29,8 @@ function getHumanChoice() {
 
 // getHumanChoice() //commented out to prevent prompt to pop up all the time
 // console.log(getHumanChoice())
+
+
+function playRound (humanSelection, computerSelection) {
+    
+}
